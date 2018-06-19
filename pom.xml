@@ -25,6 +25,11 @@
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 	</properties>
 
+	<modules>
+		<module>billboard-client</module>
+		<module>hystrix-dashboard</module>
+	</modules>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
