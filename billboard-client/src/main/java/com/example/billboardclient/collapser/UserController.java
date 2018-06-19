@@ -1,4 +1,4 @@
-package com.example.billboardclient;
+package com.example.billboardclient.collapser;
 
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,17 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.ExecutionException;
 
 @RestController
-public class CollapserController {
-
+public class UserController {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @RequestMapping("/getById/{id}")
     public User get(@PathVariable String id) throws ExecutionException, InterruptedException {
         HystrixRequestContext.initializeContext();
         return userService.getUserById(id);
     }
-
-
 }

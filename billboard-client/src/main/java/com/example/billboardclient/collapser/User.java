@@ -1,4 +1,4 @@
-package com.example.billboardclient;
+package com.example.billboardclient.collapser;
 
 
 public class User {
@@ -9,7 +9,6 @@ public class User {
         this.id = id;
         this.name = name;
     }
-
 
     public String getId() {
         return id;
