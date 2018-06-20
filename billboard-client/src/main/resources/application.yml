@@ -3,3 +3,7 @@ management:
     web:
       exposure:
         include: hystrix.stream
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.int} # unique id for app instances registered with eureka

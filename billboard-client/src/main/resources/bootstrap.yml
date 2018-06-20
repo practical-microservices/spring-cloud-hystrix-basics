@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: billboard-client
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

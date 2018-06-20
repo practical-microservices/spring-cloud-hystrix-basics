@@ -28,6 +28,8 @@
 	<modules>
 		<module>billboard-client</module>
 		<module>hystrix-dashboard</module>
+		<module>eureka-server</module>
+        <module>hystrix-turbine</module>
 	</modules>
 
 	<dependencyManagement>
