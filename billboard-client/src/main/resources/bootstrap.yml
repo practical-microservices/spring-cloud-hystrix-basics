@@ -1,6 +1,6 @@
 spring:
   application:
-    name: billboard-client
+    name: "billboard-client"
 management:
   endpoints:
     web:

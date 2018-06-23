@@ -1,12 +1,17 @@
 server:
   port: 9999
 
+# Turbine services need to lookup services in Eureka but it will
+# not be discovered in Euerka so it's gets the registry but
+# does not register in Euerka.
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: true
 
+# Configure turbine so it knows which services it should scape for dashboard data
+# Turbine will lookup all the instances of the service in eureka then call the
+# instances to get their actuator streams.
 turbine:
-  appConfig: BILLBOARD-CLIENT
-  aggregator:
-    cluster-config: SAMPLE
+  appConfig: BILLBOARD-CLIENT # comma seperated list of eureka service names to scape for hystrix metrics
+  cluster-name-expression: new String('default') # this is a SpEL expression which is why we need to use new expression
