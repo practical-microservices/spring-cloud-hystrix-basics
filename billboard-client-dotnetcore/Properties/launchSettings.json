@@ -1,0 +1,12 @@
+﻿{
+  "profiles": {
+    "billboard_client_dotnetcore": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5010",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
