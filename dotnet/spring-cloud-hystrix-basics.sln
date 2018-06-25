@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "billboard-client-dotnetcore", "billboard-client-dotnetcore\billboard-client-dotnetcore.csproj", "{C186BFEB-7F2F-4D3C-BEB4-0C88BA22C7A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "billboard-client-dotnetcore", "billboard-client\billboard-client-dotnetcore.csproj", "{C186BFEB-7F2F-4D3C-BEB4-0C88BA22C7A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
