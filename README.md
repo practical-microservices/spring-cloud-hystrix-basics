@@ -20,7 +20,7 @@ The other Hystrix feature that is demonstrated is the use of collapsers, which a
  
 
 ### Things to try out 
-* Access the hystrix dashboard at http://localhost:7979 and put http://localhost:8080/hystrix.stream into the stream URL
+* Access the hystrix dashboard at http://localhost:7979 and put http://localhost:8080/actuator/hystrix.stream into the stream URL
 * Try hitting the default endpoint with and without _id_ querystring parameter and notice fallback behavior take effect. Observe how this is tracked on hystrix dashboard
 * Rapidly hit the / endpoint without id parameter (error) and observe circuit breaker flip on dashboard (blue).
 * Try hitting `http://localhost:8080/slow` endpoint to see how long running operations are treated as failures (fail-fast)
