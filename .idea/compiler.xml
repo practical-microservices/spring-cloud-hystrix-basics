@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="billboard-client" />
         <module name="eureka-server" />
         <module name="hystrix-dashboard" />
+        <module name="billboard-client" />
         <module name="hystrix-turbine" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="billboard-client" target="1.8" />
-      <module name="eureka-server" target="1.8" />
-      <module name="hystrix-dashboard" target="1.8" />
-      <module name="hystrix-turbine" target="1.8" />
-      <module name="spring-cloud-hystrix-basics" target="1.8" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="billboard-client" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
+      <module name="hystrix-turbine" options="-parameters" />
+    </option>
   </component>
 </project>
